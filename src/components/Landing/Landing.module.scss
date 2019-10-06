@@ -1,0 +1,114 @@
+.Landing {
+  height: 100vh;
+  position: relative;
+
+  .backgroundLayer {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 17rem;
+    font-weight: bold;
+    overflow: hidden;
+    color: #ededed;
+
+    .backgroundContent {
+      padding-left: 32px;
+    }
+  }
+
+  .splitViewLayer {
+    position: absolute;
+    //background: green;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    .leftContainer {
+      //background: red;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      .leftNavBar {
+        //background: orange;
+        padding-left: 16px;
+        padding-top: 8px;
+        font-weight: 600;
+        font-size: 16px;
+      }
+
+      .leftContent {
+        flex: 1;
+        //background: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 8rem;
+        font-weight: 600;
+        padding-left: 64px;
+      }
+    }
+
+    .rightContainer {
+      background: purple;
+      flex: 1;
+      position: relative;
+
+      .bgimg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+      }
+
+      .rightContent {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .rightNavBar {
+          //background: orange;
+          display: flex;
+          justify-content: space-evenly;
+          color: white;
+          font-weight: 600;
+          font-size: 18px;
+          text-transform: uppercase;
+          padding: 8px;
+
+        }
+
+        .summary {
+          //background: red;
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .summaryContainer {
+            background: white;
+            height: 50%;
+            width: 50%;
+            border-radius: 5px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+
+            .summaryText {
+              flex: 1;
+            }
+
+            .summaryActions {
+              display: flex;
+              justify-content: space-evenly;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
